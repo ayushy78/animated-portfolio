@@ -11,8 +11,9 @@ import StarsBackground from "./StarsBackground";
 
 const App = () => {
   return (
-    <div>
-      <Cursor />
+    <StarsBackground>
+      {/* <Cursor /> */}
+
       <section id="Homepage">
         <Navbar />
         <Hero />
@@ -21,18 +22,21 @@ const App = () => {
       <section id="Services">
         <Parallax type="services" />
       </section>
+
       <section>
         <Services />
       </section>
+
       <section id="Portfolio">
         <Parallax type="portfolio" />
       </section>
-      <StarsBackground />
+
       <Portfolio />
+
       <section id="Contact">
         <Contact />
       </section>
-    </div>
+    </StarsBackground>
   );
 };
 

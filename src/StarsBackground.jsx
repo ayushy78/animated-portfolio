@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const StarsBackground = () => {
+const StarsBackground = (props) => {
   const canvasRef = useRef(null);
   const mouse = useRef({ x: 0, y: 0 });
   const stars = useRef([]);
@@ -12,7 +12,9 @@ const StarsBackground = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    for (let i = 0; i < 100; i++) {
+    const Nstars = 73;
+
+    for (let i = 0; i < Nstars; i++) {
       stars.current.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -101,10 +103,19 @@ const StarsBackground = () => {
   }, []);
 
   return (
-    <canvas
-      ref={canvasRef}
-      style={{ position: "fixed", top: 0, left: 0, zIndex: -1 }}
-    />
+    <>
+      <canvas
+        ref={canvasRef}
+        style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          zIndex: 0,
+          pointerEvents: "visible",
+        }}
+      />
+      {props.children}
+    </>
   );
 };
 
