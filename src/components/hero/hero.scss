@@ -11,6 +11,24 @@
 
     }
 
+<<<<<<< Updated upstream
+=======
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+.scroll{
+    width: 50;
+}
+>>>>>>> Stashed changes
     .textContainer{
         width: 50%;
         height: 100%;
@@ -63,4 +81,8 @@
         width: 50%;
         font-weight: bold;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

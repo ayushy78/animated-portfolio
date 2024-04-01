@@ -35,7 +35,11 @@ const sliderVariants = {
     transition: {
       repeat:Infinity,
       repeatType:"mirror",
+<<<<<<< Updated upstream
       duration: 20,
+=======
+      duration: 10,
+>>>>>>> Stashed changes
      
     },
   },
@@ -52,11 +56,17 @@ const sliderVariants = {
         <motion.h2 variants={textVariants}>OSMAN GÖZÜKÜÇÜK</motion.h2>
         <motion.h1 variants={textVariants}>Frontend developer :D</motion.h1>
         <motion.div variants={textVariants} className="buttons">
+<<<<<<< Updated upstream
           <motion.button variants={textVariants}>Son yapılan projeleri gör</motion.button>
           <motion.button variants={textVariants}>Bana ulaşmak için</motion.button>
         </motion.div>
         <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
       </motion.div>
+=======
+          <motion.button variants={textVariants}>Buy Now!</motion.button>
+          <motion.button className="scroll" variants={textVariants}>Join our Discord!</motion.button>
+        </motion.div>
+>>>>>>> Stashed changes
       </div>
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
         Ubn-Jr

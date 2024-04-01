@@ -5,7 +5,11 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
+<<<<<<< Updated upstream
     title: "React",
+=======
+    title: "DEX Wallet",
+>>>>>>> Stashed changes
     img: "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=600",
     desc: "React, Facebook tarafından geliştirilen ve açık kaynaklı bir JavaScript kütüphanesidir. Web uygulamaları oluşturmak için kullanılan React, özellikle kullanıcı arayüzü geliştirmek için tasarlanmıştır. React'in temel felsefesi, bileşen tabanlı bir yapı üzerine odaklanmaktır."
   },
@@ -25,7 +29,11 @@ const items = [
     id: 4,
     title: "Php",
     img: "https://images.pexels.com/photos/3862367/pexels-photo-3862367.jpeg?auto=compress&cs=tinysrgb&w=600",
+<<<<<<< Updated upstream
     desc: "PHP (Hypertext Preprocessor), genellikle sunucu taraflı web geliştirmek için kullanılan popüler bir programlama dilidir. İlk olarak 1994 yılında Rasmus Lerdorf tarafından geliştirilen PHP, özellikle dinamik web siteleri oluşturmak için yaygın bir şekilde kullanılmaktadır."
+=======
+    desc: "Less go to the moon make me ricc"
+>>>>>>> Stashed changes
   },
 ];
 
@@ -69,7 +77,11 @@ const Portfolio = () => {
   return (
     <div className="portfolio">
       <div className="progress">
+<<<<<<< Updated upstream
         <h1>Öne Çıkan Bilgiler</h1>
+=======
+        <h1>How to buy $PWIF</h1>
+>>>>>>> Stashed changes
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map(item => (
