@@ -4,25 +4,32 @@ const StarsBackground = (props) => {
   const canvasRef = useRef(null);
   const mouse = useRef({ x: 0, y: 0 });
   const stars = useRef([]);
+  const Nstars = useRef(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const updateCanvasSize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      Nstars.current = Math.floor((canvas.width * canvas.height) / 13579);
+      console.log(Nstars.current);
+      resetStars();
+    };
 
-    const Nstars = 73;
-
-    for (let i = 0; i < Nstars; i++) {
-      stars.current.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        radius: Math.random() * 1 + 1,
-        vx: Math.floor(Math.random() * 50) - 25,
-        vy: Math.floor(Math.random() * 50) - 25,
-      });
-    }
+    const resetStars = () => {
+      stars.current = [];
+      for (let i = 0; i < Nstars.current; i++) {
+        stars.current.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          radius: Math.random() * 1 + 1,
+          vx: Math.floor(Math.random() * 50) - 25,
+          vy: Math.floor(Math.random() * 50) - 25,
+        });
+      }
+    };
 
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -87,7 +94,14 @@ const StarsBackground = (props) => {
       mouse.current = { x: e.clientX, y: e.clientY };
     };
 
+    const handleWindowResize = () => {
+      updateCanvasSize();
+    };
+
+    window.addEventListener("resize", handleWindowResize);
     canvas.addEventListener("mousemove", handleMouseMove);
+
+    updateCanvasSize();
 
     const tick = () => {
       draw();
@@ -98,6 +112,7 @@ const StarsBackground = (props) => {
     tick();
 
     return () => {
+      window.removeEventListener("resize", handleWindowResize);
       canvas.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
