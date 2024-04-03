@@ -126,7 +126,7 @@ const StarsBackground = (props) => {
           top: 0,
           left: 0,
           zIndex: 0,
-          pointerEvents: "visible",
+          pointerEvents: "auto",
         }}
       />
       {props.children}
