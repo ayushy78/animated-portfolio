@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
-import Carousel from "../Carousel/Carousel";
 
 const variants = {
   initial: {
@@ -27,7 +26,6 @@ const Services = () => {
 
   return (
     <div>
-      <Carousel />
 
       <motion.div
         className="services"
