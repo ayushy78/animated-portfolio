@@ -1,5 +1,6 @@
 
 import "./app.scss";
+import ImageCarousel from "./ImageCarousel"
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 
@@ -9,6 +10,7 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import StarsBackground from "./StarsBackground";
 
+
 const App = () => {
   return (
     <StarsBackground>
@@ -16,11 +18,12 @@ const App = () => {
     
       <section id="Homepage">
       
-
         <Navbar />
         <Hero />
       </section>
-      
+      <section>
+      <ImageCarousel/>
+      </section>
 
       <section id="Services">
         <Parallax type="services" />
