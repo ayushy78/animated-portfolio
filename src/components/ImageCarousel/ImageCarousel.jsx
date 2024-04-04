@@ -36,7 +36,7 @@ export default function App() {
           {images.map((image) => (
             <Carousel.Item
               key={image.id}
-              interval={1500}
+              interval={2000}
               className="carousel-item"
             >
               <img
@@ -50,6 +50,18 @@ export default function App() {
               </Carousel.Caption> */}
             </Carousel.Item>
           ))}
+          <Carousel.Item interval={600000} className="carousel-item">
+            <a href="#" className="carousel-link">
+              <img
+                className="carousel-image"
+                src="PwerryInsta.png"
+                alt="Buy Now"
+              />
+            </a>
+            <Carousel.Caption className="carousel-caption">
+              <h3>Buy Now</h3>
+            </Carousel.Caption>
+          </Carousel.Item>
         </Carousel>
       </div>
     </div>
