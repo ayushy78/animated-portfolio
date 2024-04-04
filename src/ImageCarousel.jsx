@@ -1,5 +1,6 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+
+import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
 // jsobect to store the images in public folder
@@ -28,28 +29,25 @@ const images = [
 
 export default function App() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-      }}
-    >
-      <div style={{ display: "block", width: 700, padding: 30 }}>
-        <h4 style = {{textAlign: "center"}}>Story Of Pwerry The Platypus</h4>
-        <Carousel>
+    <div className="app-container">
+      <div className="carousel-container">
+        <h4 className="carousel-title">Story Of Perry The Platypus</h4>
+        <Carousel className="carousel">
           {images.map((image) => (
-            <Carousel.Item key={image.id} interval={1500}>
+            <Carousel.Item
+              key={image.id}
+              interval={1500}
+              className="carousel-item"
+            >
               <img
-                className="d-block w-100"
+                className="carousel-image"
                 src={image.src}
                 alt={`Image ${image.id}`}
               />
-              {/* <Carousel.Caption>
+              {/* <Carousel.Caption className="carousel-caption">
               <h3>Label for slide {image.id}</h3>
               <p>Sample Text for Image {image.id}</p>
-            </Carousel.Caption> */}
+              </Carousel.Caption> */}
             </Carousel.Item>
           ))}
         </Carousel>

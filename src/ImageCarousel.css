@@ -1,9 +1,33 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .carousel-container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .carousel-item img {
-    height: 400px;
-    object-fit: cover;
-  }
+  display: block;
+  width: 700px;
+  padding: 30px;
+}
+
+.carousel-title {
+  text-align: center;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-image {
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-caption {
+  color: white;
+}
