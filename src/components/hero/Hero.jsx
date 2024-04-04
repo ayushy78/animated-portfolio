@@ -65,7 +65,7 @@ const Hero = () => {
           $PWIF
         </motion.div>
         <div className="imageContainer">
-          <img src="/Hero.gif" className="photo" alt="" />
+          <img src="PwerryInBusiness.png" className="photo" alt="Pwerry" />
         </div>
       </div>
     </div>

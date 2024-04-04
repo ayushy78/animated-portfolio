@@ -54,13 +54,13 @@ export default function App() {
             <a href="#" className="carousel-link">
               <img
                 className="carousel-image"
-                src="PwerryInsta.png"
+                src="BuyPhoto.png"
                 alt="Buy Now"
               />
             </a>
-            <Carousel.Caption className="carousel-caption">
+            {/* <Carousel.Caption className="carousel-caption">
               <h3>Buy Now</h3>
-            </Carousel.Caption>
+            </Carousel.Caption> */}
           </Carousel.Item>
         </Carousel>
       </div>
