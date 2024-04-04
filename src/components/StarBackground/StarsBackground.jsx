@@ -1,3 +1,5 @@
+import "./StarsBackground.scss";
+
 import React, { useEffect, useRef } from "react";
 
 const StarsBackground = (props) => {
