@@ -1,9 +1,9 @@
 import "bootstrap/dist/css/bootstrap.css";
+import "./ImageCarousel.css";
 
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 
-// jsobect to store the images in public folder
 const images = [
   {
     id: 1,
