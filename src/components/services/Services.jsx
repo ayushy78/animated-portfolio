@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import "./services.scss";
 import { motion, useInView } from "framer-motion";
+import photo2 from './photo2.png';
+
 
 const variants = {
   initial: {
@@ -26,13 +28,10 @@ const Services = () => {
 
   return (
     <div>
-
       <motion.div
         className="services"
         variants={variants}
         initial="initial"
-        // animate="animate"
-        // whileInView="animate"
         ref={ref}
         animate={"animate"}
       >
@@ -42,22 +41,15 @@ const Services = () => {
         </motion.div>
         <motion.div className="titleContainer" variants={variants}>
           <div className="title">
-            <img src="/Roadmap.png" alt="" />
             <h1>
-              <motion.b whileHover={{ color: "orange" }}>Roadmap</motion.b>
+              <motion.b whileHover={{ color: "white" }}>Roadmap</motion.b>
             </h1>
-          </div>
-          <div className="title">
-            <h1>
-              <motion.b whileHover={{ color: "orange" }}>Buy</motion.b> Now
-            </h1>
-    
           </div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
           <motion.div
             className="box"
-            whileHover={{ background: "lightgray", color: "black" }}
+            whileHover={{ backgroundImage: `url(${photo2})` }}
           >
             <h2>Branding</h2>
             <p>
@@ -70,7 +62,7 @@ const Services = () => {
           </motion.div>
           <motion.div
             className="box"
-            whileHover={{ background: "lightgray", color: "black" }}
+            whileHover={{ backgroundImage: `url(${photo2})` }}
           >
             <h2>Branding</h2>
             <p>
@@ -83,7 +75,7 @@ const Services = () => {
           </motion.div>
           <motion.div
             className="box"
-            whileHover={{ background: "lightgray", color: "black" }}
+            whileHover={{ backgroundImage: `url(${photo2})` }}
           >
             <h2>Branding</h2>
             <p>
@@ -96,7 +88,7 @@ const Services = () => {
           </motion.div>
           <motion.div
             className="box"
-            whileHover={{ background: "lightgray", color: "black" }}
+            whileHover={{ backgroundImage: `url(${photo2})` }}
           >
             <h2>Branding</h2>
             <p>
