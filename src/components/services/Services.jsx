@@ -37,12 +37,12 @@ const Services = () => {
         animate={"animate"}
       >
         <motion.div className="textContainer" variants={variants}>
-          <p>Get to know us</p>
+          <p>JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN</p>
           <hr />
         </motion.div>
         <motion.div className="titleContainer" variants={variants}>
           <div className="title">
-            <img src="/people.webp" alt="" />
+            <img src="/Roadmap.png" alt="" />
             <h1>
               <motion.b whileHover={{ color: "orange" }}>Roadmap</motion.b>
             </h1>
@@ -51,7 +51,7 @@ const Services = () => {
             <h1>
               <motion.b whileHover={{ color: "orange" }}>Buy</motion.b> Now
             </h1>
-            <button>Roadmap</button>
+    
           </div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
