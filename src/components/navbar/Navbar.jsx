@@ -1,11 +1,17 @@
+import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
+  const copyToClipboard = () => {
+    const textToCopy = "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN";
+    navigator.clipboard.writeText(textToCopy);
+  };
+
   return (
     <div className="navbar">
-      {/*sidebar*/}
+      {/* sidebar */}
       <Sidebar />
       <div className="wrapper">
         <motion.span
@@ -29,7 +35,11 @@ const Navbar = () => {
             <img src="/PwerryTwitter.png" alt="" />
           </a>
         </div>
+        
       </div>
+      <div className="copy-text" onClick={copyToClipboard}>
+          JUPyiwrYJFskUPeFoSYbKedZNsDvCN
+        </div>
     </div>
   );
 };

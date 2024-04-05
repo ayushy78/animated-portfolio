@@ -4,7 +4,7 @@ import "./app.scss";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
-
+import SlideText from "./components/SlideText/SlideText"
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
@@ -18,9 +18,11 @@ const App = () => {
   return (
     <div className='Bodyy'>
     <>
+   
       <StarsBackground> 
          <section id="Homepage">
           <Navbar />
+          <SlideText/>
           <Hero />
         </section>
         <section>

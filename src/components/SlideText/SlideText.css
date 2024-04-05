@@ -1,0 +1,26 @@
+.infinite-linear-slide-text {
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(245, 245, 245, 0); /* Semi-transparent white background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: slideText 3s linear infinite;
+  padding: 0 10px;
+  width: 100%; /* Make the text container fill the entire width */
+  margin: 0; /* Remove any default margin */
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

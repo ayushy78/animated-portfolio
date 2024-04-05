@@ -24,7 +24,14 @@
           color: rebeccapurple;
           letter-spacing: 10px;
       }
+      .copy-text {
 
+      
+        &:hover {
+          color: red; /* Change color on hover */
+        }
+      }
+      
       h1{
           font-size: 88px;
       }

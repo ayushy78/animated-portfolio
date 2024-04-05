@@ -36,6 +36,10 @@ const sliderVariants = {
     },
   },
 };
+const handleClick = () => {
+  const textToCopy = "JUPyiwrYJFskUPeFoSYbKedZNsDvCN";
+  navigator.clipboard.writeText(textToCopy);
+};
 
 const Hero = () => {
   return (
@@ -48,9 +52,10 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h1 variants={textVariants}>$PWIF</motion.h1>
-          <motion.h2 variants={textVariants}>Platypus wif a hat</motion.h2>
+          <motion.h2 variants={textVariants}>Just A Platypus wif a hat</motion.h2>
+          <motion.h2 variants={textVariants} className="copy-text" onClick={handleClick}>JUPyiwrYJFskUPeFoSYbKedZNsDvCN</motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>Buy Now!</motion.button>
+            <motion.button variants={textVariants}>Trade Now!</motion.button>
             <motion.button className="scroll" variants={textVariants}>
               Join our Discord!
             </motion.button>
