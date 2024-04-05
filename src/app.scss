@@ -3,22 +3,25 @@ html {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
-
+a:hover {
+  cursor: url('./HoverCursor.png'), auto;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "DM Sans", sans-serif;
 }
-
+.custom-cursor:active {
+  cursor: url('./HoverCursor.png'), auto;
+}
 .custom-cursor{
-  background-color: #515185fc;
   cursor: url('./Cursor.png'), auto;
 }
 
+
 body {
   
-  cursor: url('./Cursor.png'), auto;
   background-color: #010113fc;
   color: rgb(242, 140, 5);
 }
