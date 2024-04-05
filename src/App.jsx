@@ -1,19 +1,19 @@
-// import Navbar from "./components/navbar/Navbar";
-// import "./app.scss";
-// import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
-// import Contact from "./components/contact/Contact";
-// import Hero from "./components/hero/Hero";
+import Navbar from "./components/navbar/Navbar";
+import "./app.scss";
+import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
+import Contact from "./components/contact/Contact";
+import Hero from "./components/hero/Hero";
 
-// import Parallax from "./components/parallax/Parallax";
-// import Portfolio from "./components/portfolio/Portfolio";
+import Parallax from "./components/parallax/Parallax";
+import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
-// import StarsBackground from "./components/StarBackground/StarsBackground";
+import StarsBackground from "./components/StarBackground/StarsBackground";
 
 const App = () => {
   return (
     <>
-      {/* <StarsBackground> */}
-        {/* <section id="Homepage">
+      <StarsBackground> 
+         <section id="Homepage">
           <Navbar />
           <Hero />
         </section>
@@ -25,13 +25,13 @@ const App = () => {
         <section id="Services">
           <Navbar />
           <Parallax type="services" />
-        </section> */}
+        </section>
 
         <section>
-          {/* <Navbar /> */}
+          <Navbar />
           <Services />
         </section>
-{/* 
+
         <section id="Portfolio">
           <Navbar />
           <Parallax type="portfolio" />
@@ -41,8 +41,8 @@ const App = () => {
 
         <section id="Contact">
           <Contact />
-      </section> */}
-      {/* </StarsBackground>  */}
+      </section> 
+       </StarsBackground>  
     </>
   );
 };

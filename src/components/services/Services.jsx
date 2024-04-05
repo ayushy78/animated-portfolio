@@ -23,37 +23,37 @@ const phases = {
   phase1: {
     id: 1,
     style: {
-      backgroundImage: "url('./Roadmap.png')",
+      backgroundImage: "url('./Roadmap1.png')",
     },
-    whileHover: { backgroundImage: "url('./photo3.png')" },
-    title: "Branding",
+    whileHover: { backgroundImage: "url('./Roadmap5.png')" },
+    title: "Phase 1",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
   },
   phase2: {
     id: 2,
     style: {
-      backgroundImage: "url('./photo5.png')",
+      backgroundImage: "url('./Roadmap2.png')",
     },
-    whileHover: { backgroundImage: "url('./photo3.png')" },
-    title: "Branding",
+    whileHover: { backgroundImage: "url('./Roadmap5.png')" },
+    title: "Phase 2",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
   },
   phase3: {
     id: 3,
     style: {
-      backgroundImage: "url('./photo2.png')",
+      backgroundImage: "url('./Roadmap3.png')",
     },
-    whileHover: { backgroundImage: "url('./photo3.png')" },
-    title: "Branding",
+    whileHover: { backgroundImage: "url('./Roadmap5.png')" },
+    title: "Phase 3",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
   },
   phase4: {
     id: 4,
     style: {
-      backgroundImage: "url('./photo5.png')",
+      backgroundImage: "url('./Roadmap4.png')",
     },
-    whileHover: { backgroundImage: "url('./photo3.png')" },
-    title: "Branding",
+    whileHover: { backgroundImage: "url('./Roadmap5.png')" },
+    title: "Phase 4",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
   },
 };
