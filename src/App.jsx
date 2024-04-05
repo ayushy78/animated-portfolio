@@ -1,4 +1,5 @@
 import Navbar from "./components/navbar/Navbar";
+import './cursor.css';
 import "./app.scss";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import Contact from "./components/contact/Contact";
@@ -9,8 +10,13 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import StarsBackground from "./components/StarBackground/StarsBackground";
 
+
+
+
+
 const App = () => {
   return (
+    <div className='Bodyy'>
     <>
       <StarsBackground> 
          <section id="Homepage">
@@ -44,6 +50,7 @@ const App = () => {
       </section> 
        </StarsBackground>  
     </>
+    </div>
   );
 };
 
