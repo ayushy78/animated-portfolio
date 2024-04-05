@@ -21,7 +21,7 @@ const variants = {
   },
 };
 
-const item = {
+const phases = {
   phase1: {
     id: 1,  
     style: {
@@ -81,7 +81,7 @@ const item = {
   phase3: {
     id: 3,
     style: {
-      backgroundImage: "url('./photo5.png')", 
+      backgroundImage: "url('./photo2.png')", 
       "&::before": {
         content: "",
         display: "block",
@@ -162,60 +162,18 @@ const Services = () => {
           </div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
-          <motion.div
-            className="box"
-            style={item.phase1.style}
-            whileHover={item.phase1.whileHover}
-
-          >
-            <h2>Branding</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi! Ad nam pariatur assumenda quae mollitia libero
-              repellat explicabo maiores?
-            </p>
-            <button>Go</button>
-          </motion.div>
-          <motion.div
-            className="box"
-            whileHover={{ backgroundImage: `url(${photo2})` }}
-          >
-            <h2>Branding</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi! Ad nam pariatur assumenda quae mollitia libero
-              repellat explicabo maiores?
-            </p>
-            <button>Go</button>
-          </motion.div>
-          <motion.div
-            className="box"
-            whileHover={{ backgroundImage: `url(${photo2})` }}
-          >
-            <h2>Branding</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi! Ad nam pariatur assumenda quae mollitia libero
-              repellat explicabo maiores?
-            </p>
-            <button>Go</button>
-          </motion.div>
-          <motion.div
-            className="box"
-            whileHover={{ backgroundImage: `url(${photo2})` }}
-          >
-            <h2>Branding</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              libero enim nisi aliquam consectetur expedita magni eius ex
-              corrupti animi! Ad nam pariatur assumenda quae mollitia libero
-              repellat explicabo maiores?
-            </p>
-            <button>Go</button>
-          </motion.div>
+          {Object.values(phases).map((phase) => (
+            <motion.div
+              key={phase.id}
+              className="box"
+              style={phase.style}
+              whileHover={phase.whileHover}
+            >
+              <h2>{phase.title}</h2>
+              <p>{phase.text}</p>
+              <button>Go</button>
+            </motion.div>
+          ))}
         </motion.div>
       </motion.div>
     </div>
