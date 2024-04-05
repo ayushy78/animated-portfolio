@@ -38,16 +38,8 @@ const App = () => {
           <Services />
         </section>
 
-        <section id="Portfolio">
-          <Navbar />
-          <Parallax type="portfolio" />
-        </section>
 
-        <Portfolio />
-
-        <section id="Contact">
-          <Contact />
-      </section> 
+      
        </StarsBackground>  
     </>
     </div>
