@@ -4,10 +4,7 @@ import "./navbar.scss";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const copyToClipboard = () => {
-    const textToCopy = "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN";
-    navigator.clipboard.writeText(textToCopy);
-  };
+ 
 
   return (
     <nav className="navbar">
@@ -35,9 +32,7 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      <div className="copy-text" onClick={copyToClipboard}>
-        JUPyiwrYJFskUPeFoSYbKedZNsDvCN
-      </div>
+      
     </nav>
   );
 };

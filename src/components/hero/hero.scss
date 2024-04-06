@@ -25,10 +25,10 @@
           letter-spacing: 10px;
       }
       .copy-text {
-
+        z-index: 1000; 
       
         &:hover {
-          color: red; /* Change color on hover */
+          color: rgb(196, 194, 199); /* Change color on hover */
         }
       }
       
@@ -38,7 +38,7 @@
 
       .buttons{
           button{
-              
+            z-index: 1000; 
               padding: 20px;
               border: 1px solid white;
               border-radius: 10px;
