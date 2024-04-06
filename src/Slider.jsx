@@ -1,18 +1,17 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import './Slider.scss'
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 import slide_image_1 from './photo1.png';
 import slide_image_2 from './photo2.png';
-import slide_image_3 from './photo1.png';
-import slide_image_4 from './photo2.png';
-import slide_image_5 from './photo1.png';
-import slide_image_6 from './photo2.png';
-import slide_image_7 from './photo1.png';
-
+import slide_image_3 from './photo3.png';
+import slide_image_4 from './photo4.png';
+import slide_image_5 from './photo5.png';
+import slide_image_6 from './BuyPhoto.png';
 // Rest of your code...
 function Slider() {
   return (
@@ -57,10 +56,6 @@ function Slider() {
         <SwiperSlide>
           <img src={slide_image_6} alt="slide_image" />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={slide_image_7} alt="slide_image" />
-        </SwiperSlide>
-
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
             <ion-icon name="arrow-back-outline"></ion-icon>
