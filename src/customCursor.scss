@@ -1,0 +1,18 @@
+a:hover,
+button:hover {
+  cursor: url("./Hand.png"), auto;
+}
+
+.custom-cursor:active,
+button:active {
+  cursor: url("./Hand.png"), auto;
+}
+
+.custom-cursor,
+button {
+  cursor: url("./Arrow.png"), auto;
+}
+
+.custom-cursor-hover:hover {
+  cursor: url("./Hand.png"), auto;
+}
