@@ -10,8 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
-      {/* sidebar */}
+    <nav className="navbar">
       <Sidebar />
       <div className="wrapper">
         <motion.span
@@ -35,12 +34,11 @@ const Navbar = () => {
             <img src="/PwerryTwitter.png" alt="" />
           </a>
         </div>
-        
       </div>
       <div className="copy-text" onClick={copyToClipboard}>
-          JUPyiwrYJFskUPeFoSYbKedZNsDvCN
-        </div>
-    </div>
+        JUPyiwrYJFskUPeFoSYbKedZNsDvCN
+      </div>
+    </nav>
   );
 };
 

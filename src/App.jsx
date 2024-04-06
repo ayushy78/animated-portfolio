@@ -1,49 +1,46 @@
 import Navbar from "./components/navbar/Navbar";
-import './cursor.css';
-import "./app.scss";
+import "./cursor.css";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
-import SlideText from "./components/SlideText/SlideText"
+import SlideText from "./components/SlideText/SlideText";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
 import StarsBackground from "./components/StarBackground/StarsBackground";
-
-
-
-
+import "./app.scss";
 
 const App = () => {
   return (
-    <div className='Bodyy'>
-    <>
-   
-      <StarsBackground> 
-         <section id="Homepage">
-          <Navbar />
-          <SlideText/>
+    <div className="Bodyy">
+      <StarsBackground>
+        <section id="Homepage">
+          <Navbar className="navbar-fixed-top" />
           <Hero />
         </section>
+
         <section>
-          <Navbar />
           <ImageCarousel />
         </section>
 
         <section id="Services">
-          <Navbar />
           <Parallax type="services" />
         </section>
 
         <section>
-          <Navbar />
           <Services />
         </section>
 
+        <section id="Portfolio">
+          <Parallax type="portfolio" />
+        </section>
 
-      
-       </StarsBackground>  
-    </>
+        <Portfolio />
+
+        <section id="Contact">
+          <Contact />
+        </section>
+      </StarsBackground>
     </div>
   );
 };
