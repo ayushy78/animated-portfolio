@@ -11,8 +11,11 @@ const App = () => {
   return (
     <div className="Bodyy">
       <StarsBackground>
+        <section id="Navbar">
+          <Navbar/>
+        </section>
+
         <section id="Homepage">
-          <Navbar className="navbar-fixed-top" />
           <SlideText />
           <Hero />
         </section>

@@ -52,11 +52,27 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h1 variants={textVariants}>$PWIF</motion.h1>
-          <motion.h2 variants={textVariants}>Just A Platypus wif a hat</motion.h2>
-          <motion.h2 variants={textVariants} className="copy-text" onClick={handleClick}>JUPyiwrYJFskUPeFoSYbKedZNsDvCN</motion.h2>
+          <motion.h2 variants={textVariants}>
+            Just A Platypus wif a hat
+          </motion.h2>
+          <motion.h2
+            variants={textVariants}
+            className="custom-cursor-hover copy-text"
+            onClick={handleClick}
+          >
+            JUPyiwrYJFskUPeFoSYbKedZNsDvCN
+          </motion.h2>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>Trade Now!</motion.button>
-            <motion.button className="scroll" variants={textVariants}>
+            <motion.button
+              className="custom-cursor-hover"
+              variants={textVariants}
+            >
+              Trade Now!
+            </motion.button>
+            <motion.button
+              className="custom-cursor-hover scroll"
+              variants={textVariants}
+            >
               Join our Discord!
             </motion.button>
           </motion.div>

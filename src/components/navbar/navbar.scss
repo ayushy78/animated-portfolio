@@ -29,17 +29,17 @@
 }
 
 .social a img {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  width: 80px;
+  height: 80px;
 }
 
 .sidebar {
-  display: none; /* Hide sidebar by default */
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
-    height: 80px; /* Adjust height for smaller screens */
+    height: 80px;
   }
 
   .wrapper {
@@ -47,12 +47,12 @@
   }
 
   .social a img {
-    width: 30px; /* Adjust size for smaller screens */
-    height: 30px; /* Adjust size for smaller screens */
+    width: 30px;
+    height: 30px;
   }
 
   .sidebar {
-    display: block; /* Show sidebar in mobile and tablet views */
-    margin-left: auto; /* Move sidebar to the right */
+    display: block;
+    margin-left: auto;
   }
 }
