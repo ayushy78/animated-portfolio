@@ -4,28 +4,27 @@
   position: sticky;
   top: 0;
   height: 100px;
-  background-color: transparent; /* Set background color to transparent */
-  backdrop-filter: blur(10px); /* Apply blur effect to background */
+  background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Center the elements horizontally */
+  justify-content: space-between;
   padding: 0 20px;
-  z-index: 1000; /* Ensure it's above other content */
+  z-index: 1000;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-grow: 1; /* To occupy the remaining space */
-  max-width: 1200px; /* Adjust as per your requirement */
+  flex-grow: 1;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .social {
   display: flex;
   gap: 10px;
-  justify-content: center; /* Center the social icons horizontally */
+  justify-content: center;
 }
 
 .social a img {
@@ -43,7 +42,7 @@
   }
 
   .wrapper {
-    padding: 0 10px; /* Adjust padding for smaller screens */
+    padding: 0 10px;
   }
 
   .social a img {

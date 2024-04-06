@@ -15,7 +15,7 @@ const App = () => {
       <Slider/>
       {/* <StarsBackground>
         <section id="Navbar">
-          <Navbar/>
+          <Navbar />
         </section>
 
         <section id="Homepage">
