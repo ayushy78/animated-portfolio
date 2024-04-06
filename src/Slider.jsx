@@ -1,21 +1,19 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import slide_image_1 from './photo1.png';
+import slide_image_2 from './photo2.png';
+import slide_image_3 from './photo1.png';
+import slide_image_4 from './photo2.png';
+import slide_image_5 from './photo1.png';
+import slide_image_6 from './photo2.png';
+import slide_image_7 from './photo1.png';
 
-import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-
-import slide_image_1 from '/src/photo1.png';
-import slide_image_2 from '../public/photo2.png';
-import slide_image_3 from '../public/photo1.png';
-import slide_image_4 from '../public/photo2.png';
-import slide_image_5 from '../public/photo1.png';
-import slide_image_6 from '../public/photo2.png';
-import slide_image_7 from '../public/photo1.png';
-
+// Rest of your code...
 function Slider() {
   return (
     <div className="container">
