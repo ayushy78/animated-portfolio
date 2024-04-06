@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import './SlideText.css'; // Assuming you have the CSS file for styling
+import React, { useEffect } from "react";
+import "./SlideText.scss";
 
 const SliderText = () => {
   useEffect(() => {
     const animateText = () => {
-      const textContainer = document.querySelector('.text');
+      const textContainer = document.querySelector(".text");
       if (textContainer) {
         const containerWidth = textContainer.offsetWidth;
         const animationDuration = containerWidth / 200; // Adjust speed based on container width
@@ -23,7 +23,11 @@ const SliderText = () => {
 
   return (
     <div className="infinite-linear-slide-text">
-      <div className="text">$PWIF, a Platypus wif a hat. Just A Platypus with a hat. A hat and a Platypus. Hat. Platypus. Moon. Hat. Platypus. Moon. Money. Go. BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR</div>
+      <div className="text">
+        |RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR|  $PWIF, a Platypus wif a hat. Just A Platypus with a hat. A hat and a Platypus. Hat. Platypus. Moon. Hat. Platypus. Moon. Money. Go.  |BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+         $PWIF, a Platypus wif a hat. Just A Platypus with a hat. A hat and a Platypus. Hat. Platypus. Moon. Hat. Platypus. Moon. Money. Go.  |BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR|
+         $PWIF, a Platypus wif a hat. Just A Platypus with a hat. A hat and a Platypus. Hat. Platypus. Moon. Hat. Platypus. Moon. Money. Go.  |BRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR|
+      </div>
     </div>
   );
 };
