@@ -16,6 +16,7 @@ const App = () => {
       <StarsBackground>
         <section id="Homepage">
           <Navbar className="navbar-fixed-top" />
+          <SlideText/>
           <Hero />
         </section>
 
