@@ -26,8 +26,8 @@ const phases = {
       backgroundImage: "url('./Roadmap1.png')",
     },
     whileHover: { backgroundImage: "url('./Roadmap5.png')" },
-    title: "Phase 1",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+    title: "Phase 1: Pwerry Launchpad",
+    text: "We've launched Pwerry's website and socials, plotting against the dog and cat coins. Buckle up, platypus lovers! 🦆🚀",
   },
   phase2: {
     id: 2,
@@ -35,8 +35,8 @@ const phases = {
       backgroundImage: "url('./Roadmap2.png')",
     },
     whileHover: { backgroundImage: "url('./Roadmap5.png')" },
-    title: "Phase 2",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+    title: "Phase 2: Unleash the Platypus",
+    text: "Pwerry is diving into the Solana ecosystem, listing on Solana, dex, and Raydium! Platypus power rising! 💪💰",
   },
   phase3: {
     id: 3,
@@ -44,8 +44,8 @@ const phases = {
       backgroundImage: "url('./Roadmap3.png')",
     },
     whileHover: { backgroundImage: "url('./Roadmap5.png')" },
-    title: "Phase 3",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+    title: "Phase 3: Platypus Domination",
+    text: "Pwerry's making waves, infiltrating more exchanges, gaining global platypus fans! Platypus takeover is real! 🌊🌍",
   },
   phase4: {
     id: 4,
@@ -53,8 +53,8 @@ const phases = {
       backgroundImage: "url('./Roadmap4.png')",
     },
     whileHover: { backgroundImage: "url('./Roadmap5.png')" },
-    title: "Phase 4",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum libero enim nisi aliquam consectetur expedita magni eius ex corrupti animi! Ad nam pariatur assumenda quae mollitia libero repellat explicabo maiores?",
+    title: "Phase 4: Platypus Utopia",
+    text: "Pwerry reigns supreme, toppling dog and cat coins! Platypus memes, platypus dreams—let's change the crypto game! 🌟🚀",
   },
 };
 
