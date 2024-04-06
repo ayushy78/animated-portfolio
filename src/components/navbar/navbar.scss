@@ -2,10 +2,30 @@
 
 .navbar {
   position: sticky;
-  height: 80px;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+  height: 100px;
+  background-color: transparent; /* Set background color to transparent */
   backdrop-filter: blur(10px); /* Apply blur effect to background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Center the elements horizontally */
+  padding: 0 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1; /* To occupy the remaining space */
+  max-width: 1200px; /* Adjust as per your requirement */
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* Center the social icons horizontally */
 }
 
 .social a img {
@@ -20,6 +40,10 @@
 @media screen and (max-width: 768px) {
   .navbar {
     height: 80px; /* Adjust height for smaller screens */
+  }
+
+  .wrapper {
+    padding: 0 10px; /* Adjust padding for smaller screens */
   }
 
   .social a img {
