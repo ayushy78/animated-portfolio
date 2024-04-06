@@ -1,5 +1,4 @@
 import Navbar from "./components/navbar/Navbar";
-import "./cursor.css";
 import ImageCarousel from "./components/ImageCarousel/ImageCarousel";
 import Hero from "./components/hero/Hero";
 import SlideText from "./components/SlideText/SlideText";
@@ -14,7 +13,7 @@ const App = () => {
       <StarsBackground>
         <section id="Homepage">
           <Navbar className="navbar-fixed-top" />
-          <SlideText/>
+          <SlideText />
           <Hero />
         </section>
 
@@ -22,17 +21,15 @@ const App = () => {
           <ImageCarousel />
         </section>
 
-        <section >
+        <section>
           <Parallax type="services" />
         </section>
 
-        <section id="Roadmap" >
+        <section id="Roadmap">
           <Services />
         </section>
 
-        <section id = "Tokenomics">
-
-        </section>
+        <section id="Tokenomics"></section>
       </StarsBackground>
     </div>
   );

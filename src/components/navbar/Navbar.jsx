@@ -4,8 +4,6 @@ import "./navbar.scss";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
- 
-
   return (
     <nav className="navbar">
       <Sidebar />
@@ -32,7 +30,6 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      
     </nav>
   );
 };
