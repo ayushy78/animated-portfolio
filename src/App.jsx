@@ -12,7 +12,7 @@ const App = () => {
     <div className="Bodyy">
       <StarsBackground>
         <section id="Navbar">
-          <Navbar/>
+          <Navbar />
         </section>
 
         <section id="Homepage">
