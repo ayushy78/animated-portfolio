@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div className="app-container">
       <div className="carousel-container">
-        <h4 className="carousel-title">Pwerry's Story </h4>
+        <h4 className="carousel-title">P Story </h4>
         <Carousel className="carousel">
           {images.map((image) => (
             <Carousel.Item

@@ -18,7 +18,7 @@ a:hover {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 
 .custom-cursor {
@@ -26,6 +26,8 @@ a:hover {
 }
 
 body {
+  
+  font-family: 'League Spartan';font-size: 22px;
   cursor: url("./Cursor.png"), auto;
   background-color: #010113fc;
   color: rgb(242, 140, 5);
