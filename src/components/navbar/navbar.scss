@@ -2,44 +2,33 @@
 
 .navbar {
   position: sticky;
-  height: 100px;
+  height: 80px;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.7); /* Transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect to background */
+}
 
-  .wrapper {
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: right;
-    justify-content: space-between;
-    height: 100%;
+.social a img {
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+}
 
-    .copy-text {
-      font-weight: bold;
-      cursor: pointer;
-      white-space: nowrap;
-      flex-shrink: 0; /* Prevent the element from shrinking */
-    }
+.sidebar {
+  display: none; /* Hide sidebar by default */
+}
 
-    @include mobile {
-      justify-content: flex-end;
-      padding: 20px;
-    }
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 80px; /* Adjust height for smaller screens */
+  }
 
-    span {
-      font-weight: bold;
+  .social a img {
+    width: 30px; /* Adjust size for smaller screens */
+    height: 30px; /* Adjust size for smaller screens */
+  }
 
-      @include mobile {
-        display: none;
-      }
-    }
-
-    .social {
-      display: flex;
-      gap: 20px;
-
-      img {
-        width: 45px;
-        height: 45px;
-      }
-    }
+  .sidebar {
+    display: block; /* Show sidebar in mobile and tablet views */
+    margin-left: auto; /* Move sidebar to the right */
   }
 }

@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <Sidebar />
-      <div className="wrapper">
+    <nav className="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+      <div className="container">
+        <Sidebar className="d-lg-none" />
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -15,7 +15,7 @@ const Navbar = () => {
         >
           $PWIF
         </motion.span>
-        <div className="social">
+        <div className="social ml-auto">
           <a href="#">
             <img src="/PwerryInsta.png" alt="" />
           </a>
@@ -29,6 +29,7 @@ const Navbar = () => {
             <img src="/PwerryTwitter.png" alt="" />
           </a>
         </div>
+        <Sidebar className="d-none d-lg-block" />
       </div>
     </nav>
   );
