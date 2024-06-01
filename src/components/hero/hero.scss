@@ -44,7 +44,7 @@
         border-radius: 10px;
         background-color: transparent;
         color: white;
-        margin-right: 20px;
+        margin: 5px;
         font-weight: 300;
       }
     }
@@ -80,5 +80,15 @@
     .photo {
       display: none; /* Hide the photo on smaller screens */
     }
+    .buttons{
+      margin: 0 ;
+    }
+    .hero {
+
+      .textContainer{
+        gap: 20px !important;
+      }
+    }
+    
   }
 }
