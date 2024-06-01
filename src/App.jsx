@@ -35,7 +35,12 @@ const App = () => {
           <Services />
         </section>
 
-        <section id="Tokenomics"></section>
+        
+        <section>
+        <img src="fyi.gif" className="fyi" alt="Pwerry" />
+        
+        </section>
+         
       </StarsBackground>
     </div>
   );

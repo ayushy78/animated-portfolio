@@ -1,6 +1,8 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
-
+const handleOpenTelegramChannel = () => {
+  window.open('https://t.me/Platypuswifhatt', '_blank');
+};
 const textVariants = {
   initial: {
     x: -500,
@@ -37,7 +39,7 @@ const sliderVariants = {
   },
 };
 const handleClick = () => {
-  const textToCopy = "JUPyiwrYJFskUPeFoSYbKedZNsDvCN";
+  const textToCopy = "$PWIF";
   navigator.clipboard.writeText(textToCopy);
 };
 
@@ -67,13 +69,14 @@ const Hero = () => {
               className="custom-cursor-hover"
               variants={textVariants}
             >
-              Trade Now!
+              Trading live soon!
             </motion.button>
             <motion.button
               className="custom-cursor-hover scroll"
               variants={textVariants}
+              onClick={handleOpenTelegramChannel}
             >
-              Join our Discord!
+              Be Early Adopters!
             </motion.button>
           </motion.div>
         </motion.div>

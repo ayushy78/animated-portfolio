@@ -22,10 +22,10 @@ const Navbar = () => {
           <a href="#">
             <img src="/PwerryMedium.png" alt="" />
           </a>
-          <a href="#">
+          <a href="https://t.me/Platypuswifhatt" target="_blank" rel="noopener noreferrer">
             <img src="/PwerryTelegram.png" alt="" />
           </a>
-          <a href="#">
+          <a href="https://x.com/PlatypusWifHat" target="_blank" rel="noopener noreferrer">
             <img src="/PwerryTwitter.png" alt="" />
           </a>
         </div>

@@ -33,6 +33,7 @@ const phases = {
     id: 2,
     style: {
       backgroundImage: "url('./Roadmap2.png')",
+      
     },
     whileHover: { backgroundImage: "url('./Roadmap5.png')" },
     title: "Phase 2: Unleash the Platypus",
