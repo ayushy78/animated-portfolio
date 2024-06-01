@@ -60,7 +60,7 @@ const Hero = () => {
             className="custom-cursor-hover copy-text"
             onClick={handleClick}
           >
-            JUPyiwrYJFskUPeFoSYbKedZNsDvCN
+            Contact Address (Coming Soon)
           </motion.h2>
           <motion.div variants={textVariants} className="buttons">
             <motion.button

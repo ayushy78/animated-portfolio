@@ -16,7 +16,7 @@ import slide_image_6 from './BuyPhoto.png';
 function Slider() {
   return (
     <div className="container">
-      <h1 className="heading">Flower Gallery</h1>
+      <h1 className="heading">Story</h1>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
